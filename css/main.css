@@ -4,6 +4,66 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #24282f;
+}
+/* nav section */
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px 27px;
+    box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav .nav-btn {
+    padding: 10px;
+    border: #ff9800 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav .nav-btn:hover {
+    background-color: #ff9800;
+    color: #f5f5f5;
+}
+
+/* Section Hero main */
+
+.hero-main {
+    width: 100%;
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-main h2 {
+    font-size: 42px;
+    font-weight: bolder;
+    color: #202329;
+}
+
+/* Section rovers main */
 .rovers-main {
     width: 100%;
     padding: 18px;
