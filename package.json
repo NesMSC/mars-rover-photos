@@ -1,0 +1,17 @@
+{
+  "name": "nasa-rovers-photos-app",
+  "version": "1.0.0",
+  "description": "Photos taken by NASA Rovers",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "photos",
+    "gallery",
+    "nasa",
+    "rovers"
+  ],
+  "author": "Nestor Saavedra <nestormsc.87@gmail.com>",
+  "license": "MIT"
+}
