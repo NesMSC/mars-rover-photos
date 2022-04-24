@@ -13,5 +13,8 @@
     "rovers"
   ],
   "author": "Nestor Saavedra <nestormsc.87@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
