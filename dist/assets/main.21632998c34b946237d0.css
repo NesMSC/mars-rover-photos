@@ -1,0 +1,336 @@
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/main.css ***!
+  \********************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #24282f;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* nav section */
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px 27px;
+    box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 12px 6px -12px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav .nav-btn_rovers {
+    padding: 10px;
+    border: #3c3e44 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav .nav-btn_rovers:hover {
+    background-color: #3c3e44 5;
+    color: #f5f5f5;
+}
+
+nav .nav-btn {
+    padding: 10px;
+    border: #ff9800 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav .nav-btn:hover {
+    background-color: #ff9800;
+    color: #f5f5f5;
+}
+
+/* Section Hero main */
+
+.hero-main {
+    width: 100%;
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-main h2 {
+    font-size: 42px;
+    font-weight: bolder;
+    color: #202329;
+}
+
+/* Section search form */
+
+.search-form {
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+    background-color: #24282f;
+}
+
+.search-form .form {
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(4, 220px);
+    gap: 25px;
+}
+
+.form-input {
+    display: grid;
+    gap: 5px;
+}
+
+.form-input label {
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.form-input input {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-input select {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.btn-search {
+    border: #202329 1px solid;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 120px;
+}
+
+.btn-search:hover {
+    background-color: #202329;
+    color: #f5f5f5;
+}
+
+
+/* Section rovers main */
+.rovers-main {
+    width: 100%;
+    min-width: 320px;
+    min-height: 370px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: #24282f;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    min-width: 280px;
+    min-height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: -1px 1px 4px 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -1px 1px 4px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: -1px 1px 4px 2px rgba(0,0,0,0.4);
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header .card-name {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #f5f5f5;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.card .card-header img {
+    width: 100%;
+    height: 140px;
+}
+
+.card .card-body {
+    padding: 15px;
+    background-color: #3c3e44;
+    height: 100%;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+}
+
+.card .card-body ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.active::before {
+    content: '•';
+    color: rgb(24, 243, 24);
+    margin-right: 5px;
+}
+
+.inactive::before {
+    content: '•';
+    color: rgb(243, 24, 24);
+    margin-right: 5px;
+}
+
+.info {
+    color: #9e9e9e;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Gallery section */
+
+.gallery {
+    width: 100%;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    min-width: 320px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+.gallery-item img {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+}
+
+.gallery-item figure figcaption {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.gallery-item:hover .gallery-info {
+    z-index: 1;
+}
+
+.gallery-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(36, 40, 47, 0.5);
+    z-index: -1;
+}
+
+.gallery-info ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.gallery ul li{
+    color: #f5f5f5dc;
+    font-weight: 300;
+}
+
+@media (max-width: 890px) {
+    .search-form .form {
+        grid-template-columns: repeat(3, 180px);
+    }
+}
+
+@media (max-width: 620px) {
+    .search-form .form {
+        grid-template-columns: repeat(1, 320px);
+    }
+}
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/spinner.css ***!
+  \***********************************************************************/
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
