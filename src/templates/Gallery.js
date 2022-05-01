@@ -1,4 +1,5 @@
 import fetchData from '../utils/fetchData.js';
+const apiKey = process.env.API_KEY;
 
 const getPhotos = async ({
     sol = 1,
@@ -13,7 +14,7 @@ const getPhotos = async ({
     url += (earth_date)? `earth_date=${earth_date}` : `sol=${sol}`;
     url += `&page=${page}`;
     url += (camera)? `&camera=${camera}` : '';
-    url += `&api_key=jyVxWVo7kU1r7zSJJ5TEpXH24mKmK6uAV0pdGxSa`
+    url += `&api_key=${apiKey}`;
     
     const data = await fetchData(url);
 

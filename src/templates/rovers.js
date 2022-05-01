@@ -3,10 +3,10 @@ import Curiosity from '../assets/img/Curiosity.jpg';
 import Opportunity from '../assets/img/Opportunity.jpg';
 import Perseverance from '../assets/img/Perseverance.jpg';
 import Spirit from '../assets/img/Spirit.jpg';
-
+const apiKey = process.env.API_KEY;
 
 const getRovers = async () => {
-    const url = 'https://api.nasa.gov/mars-photos/api/v1/rovers?api_key=jyVxWVo7kU1r7zSJJ5TEpXH24mKmK6uAV0pdGxSa';
+    const url = 'https://api.nasa.gov/mars-photos/api/v1/rovers?api_key='+apiKey;
     const rovers = await fetchData(url);
     const img = {
         Curiosity,

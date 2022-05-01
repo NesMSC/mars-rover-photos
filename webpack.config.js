@@ -1,7 +1,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const Dotenv = require('dotenv-webpack');
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -35,6 +35,7 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
+        new Dotenv(),
         new MiniCssExtractPlugin({
             filename: 'assets/[name].[contenthash].css' // agregando un hash al archivo
         }),
